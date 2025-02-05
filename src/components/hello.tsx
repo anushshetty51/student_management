@@ -1,7 +1,7 @@
 const hello = () => {
     return (
         <div >
-            <p>my name  is anush</p> 
+            <p>my name  is hello</p> 
        </div>
     );
 };
