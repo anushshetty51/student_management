@@ -1,0 +1,54 @@
+/* Styling for the entire navbar */
+nav {
+  background: linear-gradient(135deg, #4CAF50, #2a9d8f); /* Gradient background */
+  padding: 15px 30px; /* Increased padding for a larger navbar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* List styling */
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Styling for each nav item */
+.nav-item {
+  margin: 0 20px;
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+.nav-item:hover {
+  color: #f0a500; /* Golden color on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Active effect */
+.nav-item:active {
+  transform: scale(0.98); /* Shrinks slightly when clicked */
+}
+
+/* Add an underline effect on hover */
+.nav-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  height: 2px;
+  background-color: #f0a500;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-item:hover::after {
+  transform: scaleX(1); /* Show underline on hover */
+}

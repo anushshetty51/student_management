@@ -1,0 +1,86 @@
+/* Container Styling */
+.stats-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 40px auto;
+    padding: 30px;
+    background: linear-gradient(145deg, #f1f1f1, #ffffff);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    text-align: left; /* Align text to the left */
+  }
+  
+  .stats-container h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  /* Select Container */
+  .select-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  select {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    background-color: #fff;
+    color: #333;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: 200px;
+  }
+  
+  select:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+  }
+  
+  /* Stats and Paragraph Styling */
+  .stats-container p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+    font-weight: 500;
+    line-height: 1.5; /* Added for better spacing */
+  }
+  
+  .stat-heading {
+    font-size: 20px;
+    color: #4CAF50;
+    font-weight: 600;
+  }
+  
+  /* Error Message Styling */
+  .error-message {
+    color: #e74c3c;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 600;
+    transition: opacity 0.5s ease;
+  }
+  
+  /* Loading Spinner */
+  .loading-spinner {
+    display: block;
+    margin: 20px auto;
+    animation: spin 1s linear infinite;
+  }
+  
+  /* Animation for Loading Spinner */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
