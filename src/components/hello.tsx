@@ -1,4 +1,4 @@
-const hii = () => {
+const hello = () => {
     return (
         <div >
             <p>my name  is anush</p> 
@@ -6,4 +6,4 @@ const hii = () => {
     );
 };
 
-export default hii;
+export default hello;
